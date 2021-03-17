@@ -1,14 +1,21 @@
 $(document).ready(function() {
-  // imposto data e ora
-
-
 //   Creare una Todo-list in cui si possano aggiungere nuovi todo e rimuoverli.
 // Rendiamo il tutto gradevole alla vista.
 
-}); // fine ready
+// Seleziono il pulsante add
+$('.titlelist #add').click(function() {
+  var inputAdd = $('input#addList').val();
 
-setInterval(function () {
-  var data = new Date().toLocaleString();
-  $('span#currentDate').text(data);
-  //imposto un intervallo
-},1000)
+
+});
+
+
+
+}); // fine ready
+// imposto data e ora
+
+// setInterval(function () {
+//   var data = new Date().toLocaleString();
+//   $('span#currentDate').text(data);
+//   //imposto un intervallo
+// },1000)
