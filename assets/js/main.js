@@ -36,9 +36,7 @@ $(document).ready(function() {
     //seleziono il pulsante edit
     var check = $('i.check');
     check.click(function(event) {
-    // seleziono input
-
-    var change = $('#change').show()
+      template.children('#change').show();
     });
   });
 }); // fine ready
