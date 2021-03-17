@@ -13,13 +13,12 @@ $('.titlelist #add').click(function() {
   // clono template
   var template = $('.template li').clone();
   // gli salvo il valore dell'input
-  template.text(inputAdd);
-
+  template.prepend(inputAdd);
   // gli aggiungo il valore di input add
 // Seleziono la mia lista
 var lista = $('.todolista ul');
 // appendo template nella lista
-lista.append(template)
+lista.append(template);
 
 });
 }); // fine ready
