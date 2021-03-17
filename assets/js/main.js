@@ -32,6 +32,14 @@ $(document).ready(function() {
       // al click rimuovo il genitore (li)
       $(this).parent().parent().remove();
     });
+
+    //seleziono il pulsante edit
+    var check = $('i.check');
+    check.click(function(event) {
+    // seleziono input
+
+    var change = $('#change').show()
+    });
   });
 }); // fine ready
 

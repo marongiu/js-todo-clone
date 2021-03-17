@@ -119,7 +119,7 @@ ul li {
   cursor: pointer;
 }
 
-.todolista ul li span .edit:hover {
+.todolista ul li span .check:hover {
   color: orange;
   cursor: pointer;
 }
@@ -130,4 +130,8 @@ ul li {
   display: none;
   margin-top: 50px;
   font-size: 20px;
+}
+
+#change {
+  display: none;
 }
