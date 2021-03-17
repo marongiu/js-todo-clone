@@ -33,7 +33,7 @@ body {
   text-align: center;
 }
 
-.title span {
+.title span#currentDate{
   font-size: 20px;
   opacity: 0.6;
 }
@@ -76,7 +76,7 @@ input[name="add"]::placeholder {
   color: #ffff;
 }
 
-.titlelist span:hover {
+.titlelist span#currentDate:hover {
   opacity: 0.7;
 }
 
@@ -103,16 +103,25 @@ ul li {
   align-items: center;
 }
 
-.todolista ul li span.edit {
-  margin-left: 150px;
-}
 
 .todolista ul li span{
   font-size: 20px;
   cursor: pointer;
-  padding-right: 5px;
+  padding: 0 5px;
 }
 
 .todolista ul li span.remove:hover {
   color: red;
+}
+
+.todolista ul li span.edit:hover {
+  color: orange;
+}
+
+#wrong {
+  color: red;
+  font-weight: bold;
+  display: none;
+  margin-top: 50px;
+  font-size: 20px;
 }

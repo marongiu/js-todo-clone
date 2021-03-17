@@ -16,8 +16,13 @@ $(document).ready(function() {
     // Seleziono la mia lista
     var list = $('.todolista ul');
     // appendo template nella lista
-    list.append(template);
-
+    // se la lunghezza della parola è minore di 1 allora non lo appendo
+    if (inputAdd.length < 1) {
+      $('span#wrong').show();
+    } else {
+      list.append(template);
+      $('span#wrong').hide();
+    }
     // Ora seleziono il bottone rimuovi
     var remove = $('.remove');
     // gli seleziono il click
