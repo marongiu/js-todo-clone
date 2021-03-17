@@ -108,16 +108,20 @@ ul li {
 
 .todolista ul li span{
   font-size: 20px;
-  cursor: pointer;
+}
+
+.remove {
   padding: 0 5px;
 }
 
-.todolista ul li span.remove:hover {
+.todolista ul li span .remove:hover {
   color: red;
+  cursor: pointer;
 }
 
-.todolista ul li span.edit:hover {
+.todolista ul li span .edit:hover {
   color: orange;
+  cursor: pointer;
 }
 
 #wrong {

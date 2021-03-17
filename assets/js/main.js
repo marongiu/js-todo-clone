@@ -30,7 +30,7 @@ $(document).ready(function() {
     // gli seleziono il click
     remove.click(function(event) {
       // al click rimuovo il genitore (li)
-      $(this).parent().remove();
+      $(this).parent().parent().remove();
     });
   });
 }); // fine ready
