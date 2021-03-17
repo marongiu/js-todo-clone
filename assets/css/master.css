@@ -31,3 +31,41 @@ body {
   color: #025955;
   font-size: 25px;
 }
+
+.title span {
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+.title span:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.list {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[name="add"] {
+  width: 80%;
+  height: 50px;
+}
+
+.list span {
+  background-color: #025955;
+  padding: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.list span:hover {
+  opacity: 0.7;
+}
+
+.fa-plus {
+  font-size: 30px;
+  color: #ffff;
+}
