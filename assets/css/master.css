@@ -38,7 +38,7 @@ body {
   opacity: 0.6;
 }
 
-.title span:hover {
+.title span#currentDate:hover {
   opacity: 1;
   cursor: pointer;
 }
@@ -48,6 +48,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.titlelist span:hover {
+  opacity: 0.8;
 }
 
 input[name="add"] {
@@ -76,9 +80,6 @@ input[name="add"]::placeholder {
   color: #ffff;
 }
 
-.titlelist span#currentDate:hover {
-  opacity: 0.7;
-}
 
 ul li {
   list-style: none;
@@ -100,6 +101,7 @@ ul li {
   border-radius: 8px;
   opacity: 0.8;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
