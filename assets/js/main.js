@@ -16,10 +16,17 @@ $('.titlelist #add').click(function() {
   template.prepend(inputAdd);
   // gli aggiungo il valore di input add
 // Seleziono la mia lista
-var lista = $('.todolista ul');
+var list = $('.todolista ul');
 // appendo template nella lista
-lista.append(template);
+list.append(template);
 
+  // Ora seleziono il bottone rimuovi
+  var remove = $('.remove');
+  // gli seleziono il click
+  remove.click(function(event) {
+    // al click rimuovo il genitore (li)
+    $(this).parent().remove();
+  });
 });
 }); // fine ready
 // imposto data e ora
