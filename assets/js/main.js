@@ -18,8 +18,10 @@ $(document).ready(function() {
     // appendo template nella lista
     // se la lunghezza della parola è minore di 1 allora non lo appendo
     if (inputAdd.length < 1) {
+      // gli imposto display block
       $('span#wrong').show();
     } else {
+      // se invece è maggiore di 1 lo appendo e lo rinascondo
       list.append(template);
       $('span#wrong').hide();
     }
@@ -37,6 +39,6 @@ $(document).ready(function() {
 
 setInterval(function () {
   var data = new Date().toLocaleString();
-  $('.currentDate').text(data);
+  $('#currentDate').text(data);
   //imposto un intervallo
-},1000)
+})
